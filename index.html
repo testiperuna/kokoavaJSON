@@ -46,12 +46,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#ISS">ISS</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#apod">Astronomy Picture of the Day</a>
+              <a class="nav-link text-white" href="#ISS">ISS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#carousel">Gallery</a>
+              <a class="nav-link text-white" href="#apod"
+                >Astronomy Picture of the Day</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#carousel">Gallery</a>
             </li>
           </ul>
         </div>
@@ -78,8 +82,8 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8">
-            <h2 class="text-white-50 mb-4">Right Now:</h2>
-            <p class="text-white-50"></p>
+            <h2 class="text-white mb-4">Right Now on ISS:</h2>
+            <p class="text-white"></p>
           </div>
         </div>
 
@@ -87,14 +91,14 @@
         <div class="container text-center pb-5">
           <div class="row">
             <div class="col">
-              <span class="text-white-50 d-block"></span>
-              <span id="astros" class="h2 text-white-50 d-block"></span>
-              <span class="h5 text-white-50">People in Space</span>
+              <span class="text-white d-block"></span>
+              <span id="astros" class="h2 text-white d-block"></span>
+              <span class="h5 text-white">Astronauts On Board</span>
             </div>
             <div class="col">
-              <span class="text-white-50 d-block"></span>
-              <span id="speed" class="h2 text-white-50 d-block"></span>
-              <span class="h5 text-white-50">the Speed of ISS</span>
+              <span class="text-white d-block"></span>
+              <span id="speed" class="h2 text-white d-block"></span>
+              <span class="h5 text-white">Velocity</span>
             </div>
           </div>
         </div>
@@ -102,11 +106,11 @@
     </section>
 
     <!-- Picture of the Day -->
-    <div id="apod" class="text-white-50 text-center">
+    <div id="apod" class="text-white text-center">
       <div class="apodheader">Astronomy Picture of the Day</div>
 
       <div id="apodimg"></div>
-      <div id="apodexplanation" class="text-white-50 text-center"></div>
+      <div id="apodexplanation" class="text-white text-center"></div>
     </div>
 
     <!-- Carousel -->
@@ -193,7 +197,7 @@
     </div>
 
     <!-- Footer-->
-    <footer class="footer small text-center text-white-50">
+    <footer class="footer small text-center text-white">
       <div class="container px-4 px-lg-5">
         Copyright &copy; All Things Space 2025
       </div>
@@ -251,7 +255,9 @@
           document.getElementById("apodexplanation").innerHTML =
             responseJson.explanation;
           document.getElementById("apodimg").innerHTML =
-            "<img src=" + responseJson.url + " class='d-block w-100'>";
+            "<img src=" +
+            responseJson.url +
+            " class='d-block w-100' alt='image of space'>";
         });
     </script>
   </body>
