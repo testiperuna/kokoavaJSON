@@ -11337,8 +11337,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #ed4998;
-  border: 1px solid #ed4998;
+  color: white;
+  border: 1px solid white;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11368,7 +11368,7 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: white);
   }
   #mainNav .nav-link {
     transition: none;
@@ -11385,7 +11385,7 @@ body {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #fff;
+    color: white;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #000;
